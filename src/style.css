@@ -4,6 +4,8 @@
 }
 
 body{
+    width: 100vw;
+    height: 100vh;
     background-color: rgb(55, 55, 55);
     color: white;
 }
@@ -23,49 +25,59 @@ body{
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 80px;
 }
 
 .container-search {
-    width: 300px;
-    border: 1px solid red;
+    width: 500px;
     display: flex;
     justify-content:space-around;
     align-items:flex-end;
+    margin: 30px;
 }
 
 #label-search {
     display: flex;
     flex-direction: column;
-    font-size: 14px;
+    font-size: 20px;
 }
 #input-currency {
-    width: 150px;
-    height: 35px;
+    width: 200px;
+    height: 45px;
     text-align: center;
     margin-top: 5px;
     background-color: rgba(85, 85, 85);
     color: white;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 900;
 }
 
 .btn {
-    width: 100px;
-    height: 35px;
+    width: 150px;
+    height: 45px;
     border: none;
     border-radius: 10px;
     background-color: #96EB95;
     border: 1px solid #96EB95;
     font-weight: 900;
+    font-size: 20px;
 }
 
 .container-result {
     width: 60%;
     height: 60%;
-    background-color: rgba(65, 65, 65,0.73);
+    background-color: rgb(65, 65, 65);
     border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+h2 {
+    font-size: 30px;
+    margin: 5px;
+}
+
 #ul-currency {
     width: 100%;
     height: 100%;
@@ -85,8 +97,12 @@ h1 {
     align-items: center;
     list-style-type: none;
     background-color: rgb(55, 55, 55);
+    font-weight: 900;
     padding: 5px;
     border-radius: 15px;
+}
+.list-currency:hover {
+    border: 2px solid gold;
 }
 .container-coin {
     display: flex;
@@ -96,4 +112,8 @@ h1 {
 }
 .conversion {
     color: gold;
+}
+
+.selected {
+    border: 2px solid gold;
 }
