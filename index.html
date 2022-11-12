@@ -7,6 +7,20 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container container-content">
+        <h1>Casa de Câmbio</h1>
+        <section class="container container-search">
+            <label for="input-currency">Digite a moeda:
+                <input type="text" placeholder="USD" id="input-currency">
+            </label>
+
+            <button class="btn" id="btn-search">Pesquisar</button>
+        </section>
+
+        <main class="container container-result">
+            <ul id="list-currency"></ul>
+        </main>
+    </div>
+    <script src="./src/main.js" type="module"></script>
 </body>
 </html>
